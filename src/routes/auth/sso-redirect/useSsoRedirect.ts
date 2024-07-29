@@ -11,7 +11,7 @@ const useSsoRedirect = () => {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8080/api/github/gh_login?code=${code}`
+        `${import.meta.env.VITE_BE_URL}/api/github/gh_login?code=${code}`
       );
 
       if (response.status === 200) {
