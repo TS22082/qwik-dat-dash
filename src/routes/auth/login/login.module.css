@@ -1,0 +1,18 @@
+.login_container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.githubIcon {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Springy transition */
+}
+
+.githubIcon:hover {
+  transform: scale(1.2);
+}
